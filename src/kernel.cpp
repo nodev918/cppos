@@ -1,6 +1,11 @@
+
+#include "types.h"
+#include "gdt.h"
+
+
 void print(char* str)
 {
-  static unsigned short* VideoMemory = (unsigned short*)0xb8000;
+  static uint16_t* VideoMemory = (uint16_t*)0xb8000;
   for(int i = 0;str[i] != '\0'; ++i)
     VideoMemory[i] = (VideoMemory[i] & 0xFF00) | str[i];
 }
@@ -16,10 +21,11 @@ extern "C" void callConstructors()
 }
 
 
-extern "C" void kernelMain(void* multiboot_structure, unsigned int /* multiboot_magic*/)
+extern "C" void kernelMain(void* multiboot_structure, uint32_t /* multiboot_magic*/)
 {
   
-  print("Hello WOrld! --- http://www.AlgorithMan.de");
-  
+  print("Hello World!!!");
+
+
   while(1);
 }
