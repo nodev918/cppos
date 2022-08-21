@@ -1,0 +1,182 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+%.o	src/Makefile	/^%.o: %.cpp$/;"	t
+%.o	src/Makefile	/^%.o: %.s$/;"	t
+.bss	src/linker.ld	/^  .bss :$/;"	S
+.data	src/linker.ld	/^  .data :$/;"	S
+.text	src/linker.ld	/^  .text :$/;"	S
+ASPARAMS	src/Makefile	/^ASPARAMS = --32$/;"	m
+Base	src/gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Base()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+Base	src/gdt.h	/^          uint32_t Base();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+CHECKSUM	src/loader.s	/^.set CHECKSUM, -(MAGIC + FLAGS)$/;"	d
+CodeSegmentSelector	src/gdt.cpp	/^uint16_t GlobalDescriptorTable::CodeSegmentSelector()$/;"	f	class:GlobalDescriptorTable	typeref:typename:uint16_t
+CodeSegmentSelector	src/gdt.h	/^    uint16_t CodeSegmentSelector();$/;"	p	class:GlobalDescriptorTable	typeref:typename:uint16_t
+DataSegmentSelector	src/gdt.cpp	/^uint16_t GlobalDescriptorTable::DataSegmentSelector()$/;"	f	class:GlobalDescriptorTable	typeref:typename:uint16_t
+DataSegmentSelector	src/gdt.h	/^    uint16_t DataSegmentSelector();$/;"	p	class:GlobalDescriptorTable	typeref:typename:uint16_t
+FLAGS	src/loader.s	/^.set FLAGS, (1<<0 | 1<<1)$/;"	d
+GPPPARAMS	src/Makefile	/^GPPPARAMS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leadi/;"	m
+GlobalDescriptorTable	src/gdt.cpp	/^GlobalDescriptorTable::GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable
+GlobalDescriptorTable	src/gdt.h	/^    GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable
+GlobalDescriptorTable	src/gdt.h	/^  class GlobalDescriptorTable$/;"	c
+GlobalDescriptorTable::CodeSegmentSelector	src/gdt.cpp	/^uint16_t GlobalDescriptorTable::CodeSegmentSelector()$/;"	f	class:GlobalDescriptorTable	typeref:typename:uint16_t
+GlobalDescriptorTable::CodeSegmentSelector	src/gdt.h	/^    uint16_t CodeSegmentSelector();$/;"	p	class:GlobalDescriptorTable	typeref:typename:uint16_t
+GlobalDescriptorTable::DataSegmentSelector	src/gdt.cpp	/^uint16_t GlobalDescriptorTable::DataSegmentSelector()$/;"	f	class:GlobalDescriptorTable	typeref:typename:uint16_t
+GlobalDescriptorTable::DataSegmentSelector	src/gdt.h	/^    uint16_t DataSegmentSelector();$/;"	p	class:GlobalDescriptorTable	typeref:typename:uint16_t
+GlobalDescriptorTable::GlobalDescriptorTable	src/gdt.cpp	/^GlobalDescriptorTable::GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable
+GlobalDescriptorTable::GlobalDescriptorTable	src/gdt.h	/^    GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable
+GlobalDescriptorTable::SegmentDescriptor	src/gdt.h	/^      class SegmentDescriptor$/;"	c	class:GlobalDescriptorTable
+GlobalDescriptorTable::SegmentDescriptor::Base	src/gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Base()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+GlobalDescriptorTable::SegmentDescriptor::Base	src/gdt.h	/^          uint32_t Base();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+GlobalDescriptorTable::SegmentDescriptor::Limit	src/gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Limit()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+GlobalDescriptorTable::SegmentDescriptor::Limit	src/gdt.h	/^          uint32_t Limit();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor	src/gdt.cpp	/^GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint32_t limit, uint8/;"	f	class:GlobalDescriptorTable::SegmentDescriptor
+GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor	src/gdt.h	/^          SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t type);$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor
+GlobalDescriptorTable::SegmentDescriptor::base_hi	src/gdt.h	/^          uint8_t base_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+GlobalDescriptorTable::SegmentDescriptor::base_lo	src/gdt.h	/^          uint16_t base_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint16_t
+GlobalDescriptorTable::SegmentDescriptor::base_vhi	src/gdt.h	/^          uint8_t base_vhi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+GlobalDescriptorTable::SegmentDescriptor::flags_limit_hi	src/gdt.h	/^          uint8_t flags_limit_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+GlobalDescriptorTable::SegmentDescriptor::limit_lo	src/gdt.h	/^          uint16_t limit_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint16_t
+GlobalDescriptorTable::SegmentDescriptor::type	src/gdt.h	/^          uint8_t type;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+GlobalDescriptorTable::codeSegmentSelector	src/gdt.h	/^    SegmentDescriptor codeSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+GlobalDescriptorTable::dataSegmentSelector	src/gdt.h	/^    SegmentDescriptor dataSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+GlobalDescriptorTable::nullSegmentSelector	src/gdt.h	/^    SegmentDescriptor nullSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+GlobalDescriptorTable::unusedSegmentSelector	src/gdt.h	/^    SegmentDescriptor unusedSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+GlobalDescriptorTable::~GlobalDescriptorTable	src/gdt.cpp	/^GlobalDescriptorTable::~GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable
+GlobalDescriptorTable::~GlobalDescriptorTable	src/gdt.h	/^    ~GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable
+LDPARAMS	src/Makefile	/^LDPARAMS = -melf_i386$/;"	m
+Limit	src/gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Limit()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+Limit	src/gdt.h	/^          uint32_t Limit();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint32_t
+MAGIC	src/loader.s	/^.set MAGIC, 0x1badb002$/;"	d
+Port	src/port.cpp	/^Port::Port(uint16_t portnumber)$/;"	f	class:Port
+Port	src/port.h	/^    Port(uint16_t portnumber);$/;"	p	class:Port
+Port	src/port.h	/^class Port$/;"	c
+Port16Bit	src/port.cpp	/^Port16Bit::Port16Bit(uint16_t portnumber)$/;"	f	class:Port16Bit
+Port16Bit	src/port.h	/^    Port16Bit(uint16_t portnumber);$/;"	p	class:Port16Bit
+Port16Bit	src/port.h	/^class Port16Bit: public Port$/;"	c
+Port16Bit::Port16Bit	src/port.cpp	/^Port16Bit::Port16Bit(uint16_t portnumber)$/;"	f	class:Port16Bit
+Port16Bit::Port16Bit	src/port.h	/^    Port16Bit(uint16_t portnumber);$/;"	p	class:Port16Bit
+Port16Bit::Read	src/port.cpp	/^uint16_t Port16Bit::Read()$/;"	f	class:Port16Bit	typeref:typename:uint16_t
+Port16Bit::Read	src/port.h	/^    virtual uint16_t Read();$/;"	p	class:Port16Bit	typeref:typename:uint16_t
+Port16Bit::Write	src/port.cpp	/^void Port16Bit::Write(uint16_t data)$/;"	f	class:Port16Bit	typeref:typename:void
+Port16Bit::Write	src/port.h	/^    virtual void Write(uint16_t data);$/;"	p	class:Port16Bit	typeref:typename:void
+Port16Bit::~Port16Bit	src/port.cpp	/^Port16Bit::~Port16Bit()$/;"	f	class:Port16Bit
+Port16Bit::~Port16Bit	src/port.h	/^    ~Port16Bit();$/;"	p	class:Port16Bit
+Port32Bit	src/port.cpp	/^Port32Bit::Port32Bit(uint16_t portnumber)$/;"	f	class:Port32Bit
+Port32Bit	src/port.h	/^    Port32Bit(uint16_t portnumber);$/;"	p	class:Port32Bit
+Port32Bit	src/port.h	/^class Port32Bit: public Port$/;"	c
+Port32Bit::Port32Bit	src/port.cpp	/^Port32Bit::Port32Bit(uint16_t portnumber)$/;"	f	class:Port32Bit
+Port32Bit::Port32Bit	src/port.h	/^    Port32Bit(uint16_t portnumber);$/;"	p	class:Port32Bit
+Port32Bit::Read	src/port.cpp	/^uint32_t Port32Bit::Read()$/;"	f	class:Port32Bit	typeref:typename:uint32_t
+Port32Bit::Read	src/port.h	/^    virtual uint32_t Read();$/;"	p	class:Port32Bit	typeref:typename:uint32_t
+Port32Bit::Write	src/port.cpp	/^void Port32Bit::Write(uint32_t data)$/;"	f	class:Port32Bit	typeref:typename:void
+Port32Bit::Write	src/port.h	/^    virtual void Write(uint32_t data);$/;"	p	class:Port32Bit	typeref:typename:void
+Port32Bit::~Port32Bit	src/port.cpp	/^Port32Bit::~Port32Bit()$/;"	f	class:Port32Bit
+Port32Bit::~Port32Bit	src/port.h	/^    ~Port32Bit();$/;"	p	class:Port32Bit
+Port8Bit	src/port.cpp	/^Port8Bit::Port8Bit(uint16_t portnumber)$/;"	f	class:Port8Bit
+Port8Bit	src/port.h	/^    Port8Bit(uint16_t portnumber);$/;"	p	class:Port8Bit
+Port8Bit	src/port.h	/^class Port8Bit: public Port$/;"	c
+Port8Bit::Port8Bit	src/port.cpp	/^Port8Bit::Port8Bit(uint16_t portnumber)$/;"	f	class:Port8Bit
+Port8Bit::Port8Bit	src/port.h	/^    Port8Bit(uint16_t portnumber);$/;"	p	class:Port8Bit
+Port8Bit::Read	src/port.cpp	/^uint8_t Port8Bit::Read()$/;"	f	class:Port8Bit	typeref:typename:uint8_t
+Port8Bit::Read	src/port.h	/^    virtual uint8_t Read();$/;"	p	class:Port8Bit	typeref:typename:uint8_t
+Port8Bit::Write	src/port.cpp	/^void Port8Bit::Write(uint8_t data)$/;"	f	class:Port8Bit	typeref:typename:void
+Port8Bit::Write	src/port.h	/^    virtual void Write(uint8_t data);$/;"	p	class:Port8Bit	typeref:typename:void
+Port8Bit::~Port8Bit	src/port.cpp	/^Port8Bit::~Port8Bit()$/;"	f	class:Port8Bit
+Port8Bit::~Port8Bit	src/port.h	/^    ~Port8Bit();$/;"	p	class:Port8Bit
+Port8BitSlow	src/port.cpp	/^Port8BitSlow::Port8BitSlow(uint16_t portnumber)$/;"	f	class:Port8BitSlow
+Port8BitSlow	src/port.h	/^    Port8BitSlow(uint16_t portnumber);$/;"	p	class:Port8BitSlow
+Port8BitSlow	src/port.h	/^class Port8BitSlow: public Port8Bit$/;"	c
+Port8BitSlow::Port8BitSlow	src/port.cpp	/^Port8BitSlow::Port8BitSlow(uint16_t portnumber)$/;"	f	class:Port8BitSlow
+Port8BitSlow::Port8BitSlow	src/port.h	/^    Port8BitSlow(uint16_t portnumber);$/;"	p	class:Port8BitSlow
+Port8BitSlow::Write	src/port.cpp	/^void Port8BitSlow::Write(uint8_t data)$/;"	f	class:Port8BitSlow	typeref:typename:void
+Port8BitSlow::Write	src/port.h	/^    virtual void Write(uint8_t data);$/;"	p	class:Port8BitSlow	typeref:typename:void
+Port8BitSlow::~Port8BitSlow	src/port.cpp	/^Port8BitSlow::~Port8BitSlow()$/;"	f	class:Port8BitSlow
+Port8BitSlow::~Port8BitSlow	src/port.h	/^    ~Port8BitSlow();$/;"	p	class:Port8BitSlow
+Port::Port	src/port.cpp	/^Port::Port(uint16_t portnumber)$/;"	f	class:Port
+Port::Port	src/port.h	/^    Port(uint16_t portnumber);$/;"	p	class:Port
+Port::portnumber	src/port.h	/^    uint16_t portnumber;$/;"	m	class:Port	typeref:typename:uint16_t
+Port::~Port	src/port.cpp	/^Port::~Port()$/;"	f	class:Port
+Port::~Port	src/port.h	/^    ~Port();$/;"	p	class:Port
+Read	src/port.cpp	/^uint16_t Port16Bit::Read()$/;"	f	class:Port16Bit	typeref:typename:uint16_t
+Read	src/port.cpp	/^uint32_t Port32Bit::Read()$/;"	f	class:Port32Bit	typeref:typename:uint32_t
+Read	src/port.cpp	/^uint8_t Port8Bit::Read()$/;"	f	class:Port8Bit	typeref:typename:uint8_t
+Read	src/port.h	/^    virtual uint16_t Read();$/;"	p	class:Port16Bit	typeref:typename:uint16_t
+Read	src/port.h	/^    virtual uint32_t Read();$/;"	p	class:Port32Bit	typeref:typename:uint32_t
+Read	src/port.h	/^    virtual uint8_t Read();$/;"	p	class:Port8Bit	typeref:typename:uint8_t
+SegmentDescriptor	src/gdt.cpp	/^GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint32_t limit, uint8/;"	f	class:GlobalDescriptorTable::SegmentDescriptor
+SegmentDescriptor	src/gdt.h	/^          SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t type);$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor
+SegmentDescriptor	src/gdt.h	/^      class SegmentDescriptor$/;"	c	class:GlobalDescriptorTable
+Write	src/port.cpp	/^void Port16Bit::Write(uint16_t data)$/;"	f	class:Port16Bit	typeref:typename:void
+Write	src/port.cpp	/^void Port32Bit::Write(uint32_t data)$/;"	f	class:Port32Bit	typeref:typename:void
+Write	src/port.cpp	/^void Port8Bit::Write(uint8_t data)$/;"	f	class:Port8Bit	typeref:typename:void
+Write	src/port.cpp	/^void Port8BitSlow::Write(uint8_t data)$/;"	f	class:Port8BitSlow	typeref:typename:void
+Write	src/port.h	/^    virtual void Write(uint16_t data);$/;"	p	class:Port16Bit	typeref:typename:void
+Write	src/port.h	/^    virtual void Write(uint32_t data);$/;"	p	class:Port32Bit	typeref:typename:void
+Write	src/port.h	/^    virtual void Write(uint8_t data);$/;"	p	class:Port8Bit	typeref:typename:void
+Write	src/port.h	/^    virtual void Write(uint8_t data);$/;"	p	class:Port8BitSlow	typeref:typename:void
+__GDT_H	src/gdt.h	/^#define __GDT_H$/;"	d
+__PORT_H	src/port.h	/^#define __PORT_H$/;"	d
+__TYPES_H	src/types.h	/^#define __TYPES_H$/;"	d
+_start	assembly/hello.asm	/^_start:$/;"	l
+_stop	src/loader.s	/^_stop:$/;"	l
+base_hi	src/gdt.h	/^          uint8_t base_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+base_lo	src/gdt.h	/^          uint16_t base_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint16_t
+base_vhi	src/gdt.h	/^          uint8_t base_vhi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+callConstructors	src/kernel.cpp	/^extern "C" void callConstructors()$/;"	f	typeref:typename:void
+clean	src/Makefile	/^clean:$/;"	t
+codeSegmentSelector	src/gdt.h	/^    SegmentDescriptor codeSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+constructor	src/kernel.cpp	/^typedef void (*constructor)();$/;"	t	typeref:typename:void (*)()	file:
+cpp-os1	README.md	/^# cpp-os1$/;"	c
+dataSegmentSelector	src/gdt.h	/^    SegmentDescriptor dataSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+end_ctors	src/kernel.cpp	/^extern "C" constructor end_ctors;$/;"	x	typeref:typename:constructor
+end_ctors	src/linker.ld	/^    end_ctors = .;$/;"	s	section:.data
+exit	practice/TinyHelloWorld.c	/^void exit(){$/;"	f	typeref:typename:void
+flags_limit_hi	src/gdt.h	/^          uint8_t flags_limit_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+install	src/Makefile	/^install: mykernel.bin$/;"	t
+int16_t	src/types.h	/^  typedef short int16_t;$/;"	t	typeref:typename:short
+int32_t	src/types.h	/^  typedef int int32_t;$/;"	t	typeref:typename:int
+int64_t	src/types.h	/^  typedef int int64_t;$/;"	t	typeref:typename:int
+int8_t	src/types.h	/^  typedef char int8_t;$/;"	t	typeref:typename:char
+kernelMain	src/kernel.cpp	/^extern "C" void kernelMain(void* multiboot_structure, uint32_t \/* multiboot_magic*\/)$/;"	f	typeref:typename:void
+kernel_stack	src/loader.s	/^kernel_stack:$/;"	l
+limit_lo	src/gdt.h	/^          uint16_t limit_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint16_t
+loader	src/loader.s	/^loader: $/;"	l
+mykernel.bin	src/Makefile	/^mykernel.bin: linker.ld $(objects)$/;"	t
+mykernel.iso	src/Makefile	/^mykernel.iso: mykernel.bin$/;"	t
+nomain	practice/TinyHelloWorld.c	/^void nomain()$/;"	f	typeref:typename:void
+nullSegmentSelector	src/gdt.h	/^    SegmentDescriptor nullSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+objects	src/Makefile	/^objects = loader.o gdt.o port.o kernel.o $/;"	m
+portnumber	src/port.h	/^    uint16_t portnumber;$/;"	m	class:Port	typeref:typename:uint16_t
+print	practice/TinyHelloWorld.c	/^void print()$/;"	f	typeref:typename:void
+print	src/kernel.cpp	/^void print(char* str)$/;"	f	typeref:typename:void
+run	src/Makefile	/^run: mykernel.iso$/;"	t
+run1	assembly/Makefile	/^run1:$/;"	t
+run2	assembly/Makefile	/^run2:$/;"	t
+run3	assembly/Makefile	/^run3:$/;"	t
+start_ctors	src/kernel.cpp	/^extern "C" constructor start_ctors;$/;"	x	typeref:typename:constructor
+start_ctors	src/linker.ld	/^    start_ctors = .;$/;"	s	section:.data
+str	practice/TinyHelloWorld.c	/^char* str = "Hello World!\\n";$/;"	v	typeref:typename:char *
+text	assembly/hello.asm	/^  text db "Hello, World", 10$/;"	d
+type	src/gdt.h	/^          uint8_t type;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	typeref:typename:uint8_t
+uint16_t	src/types.h	/^  typedef unsigned short uint16_t;$/;"	t	typeref:typename:unsigned short
+uint32_t	src/types.h	/^  typedef unsigned char uint32_t;$/;"	t	typeref:typename:unsigned char
+uint64_t	src/types.h	/^  typedef unsigned char uint64_t;$/;"	t	typeref:typename:unsigned char
+uint8_t	src/types.h	/^  typedef unsigned char uint8_t;$/;"	t	typeref:typename:unsigned char
+unusedSegmentSelector	src/gdt.h	/^    SegmentDescriptor unusedSegmentSelector;$/;"	m	class:GlobalDescriptorTable	typeref:typename:SegmentDescriptor
+~GlobalDescriptorTable	src/gdt.cpp	/^GlobalDescriptorTable::~GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable
+~GlobalDescriptorTable	src/gdt.h	/^    ~GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable
+~Port	src/port.cpp	/^Port::~Port()$/;"	f	class:Port
+~Port	src/port.h	/^    ~Port();$/;"	p	class:Port
+~Port16Bit	src/port.cpp	/^Port16Bit::~Port16Bit()$/;"	f	class:Port16Bit
+~Port16Bit	src/port.h	/^    ~Port16Bit();$/;"	p	class:Port16Bit
+~Port32Bit	src/port.cpp	/^Port32Bit::~Port32Bit()$/;"	f	class:Port32Bit
+~Port32Bit	src/port.h	/^    ~Port32Bit();$/;"	p	class:Port32Bit
+~Port8Bit	src/port.cpp	/^Port8Bit::~Port8Bit()$/;"	f	class:Port8Bit
+~Port8Bit	src/port.h	/^    ~Port8Bit();$/;"	p	class:Port8Bit
+~Port8BitSlow	src/port.cpp	/^Port8BitSlow::~Port8BitSlow()$/;"	f	class:Port8BitSlow
+~Port8BitSlow	src/port.h	/^    ~Port8BitSlow();$/;"	p	class:Port8BitSlow
